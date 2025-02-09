@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    color: white;
+    font: normal 20pt Arial;
+    text-align: center;
+}
+
+.numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 100px; 
+    margin-top: 200px;
+}
+
+#numero {
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#calcular {
+    width: 90px;
+    height: 40px;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    margin: 40px;
+    cursor: pointer;
+
+}
+
+#calcular:hover {
+    background-color: white;
+    color: black;
+}
+
+.dobro, .triplo, .raizQuadrada {
+    border: 1px solid white;
+    padding: 20px;
+    width: 350px;
+    height: 100px;
+    border-radius: 10px;
+}

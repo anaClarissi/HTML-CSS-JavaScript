@@ -1,0 +1,57 @@
+body {
+    background-color: black;
+    color: white;
+    font: normal 20pt Arial;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.219);
+    border-radius: 30px;
+    gap: 70px;
+    padding: 50px;
+    flex-direction: column;
+    margin: 0 20% 0 20%;
+    border: 2px solid rgba(128, 128, 128, 0.829);
+}
+
+.primeiraNota, .segundaNota, .resultado {
+    background-color: black;
+    padding: 20px;
+    width: 50%;
+    border-radius: 20px;
+    color: rgba(128, 128, 128, 0.829);
+    border: 2px solid rgba(128, 128, 128, 0.829);
+}
+
+#primeiraNota, #segundaNota {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    color: rgba(128, 128, 128, 0.829);
+    border: 1px solid rgba(128, 128, 128, 0.829);
+    background-color: black;
+    text-align: center;
+    font-size: 18px;
+}
+
+#calcular {
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    background-color: black;
+    color: rgba(128, 128, 128, 0.829);
+    border-radius: 10px;
+    border: 2px solid rgba(128, 128, 128, 0.829);
+    font-size: 18px;
+}
+
+#calcular:hover {
+    width: 210px;
+    height: 55px;
+    background-color: rgba(128, 128, 128, 0.829);
+    color: black;
+}

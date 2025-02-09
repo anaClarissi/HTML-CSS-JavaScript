@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Semáforo</title>
+</head>
+<body>
+    <header>
+        <h1>Interaja com os botões</h1>
+    </header>
+
+    <section>
+        <div>
+            <img src="imagens/desligado.png" alt="">
+        </div>
+        <div id="botoes">
+            <input type="button" value="Vermelho" id="vermelho" onclick="ligarVermelho()">
+            <input type="button" value="Amarelo" id="amarelo" onclick="ligarAmarelo()">
+            <input type="button" value="Verde" id="verde" onclick="ligarVerde()">
+            <input type="button" value="Automático" id="automatico" onclick="automatico()">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

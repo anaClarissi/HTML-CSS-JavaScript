@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Medidas</title>
+</head>
+<body>
+    <h1>Conversor de Medidas</h1>
+    <div class="coversor">
+        <label for="inputNumber">Uma distância em Metros: </label>
+        <input type="number" name="distancia" id="distancia">
+        <input type="button" value="converter" id="converter" onclick="converter()">
+        
+        <div id="metros"></div>
+        <div class="resultados">
+            <div class="valores" id="km">Km</div>
+            <div class="valores" id="hm">Hm</div>
+            <div class="valores" id="dam">Dam</div>
+            <div class="valores" id="dm">Dm</div>
+            <div class="valores" id="cm">Cm</div>
+            <div class="valores" id="mm">Mm</div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

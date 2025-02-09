@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dobro, Triplo e Raiz Quadrada</title>
+</head>
+<body>
+    <h1>Dobro, Triplo e Raiz Quadrada</h1>
+    <p>Digite um número</p>
+    <input type="number" name="numero" id="numero">
+
+    <input type="button" value="Calcular" id="calcular" onclick="calcular()">
+
+
+
+    <div class="numeros">
+
+      <div class="dobro" onmouseenter="entrou1()" onmouseout="saiu1()">
+        Dobro
+        <p id="dobro">
+
+        </p>
+        <p id="resultado1"></p>
+      </div>
+
+      <div class="triplo" onmouseenter="entrou2()" onmouseout="saiu2()">
+        Triplo
+        <p id="triplo">
+
+        </p>
+        <p id="resultado2"></p>
+      </div>
+
+      <div class="raizQuadrada" onmouseenter="entrou3()" onmouseout="saiu3()">
+        Raiz 
+        <p id="raizQuadrada">
+
+        </p>
+        <p id="resultado3"></p>
+      </div>
+
+    </div>
+
+    <script src="scrupt.js"></script>
+</body>
+</html>

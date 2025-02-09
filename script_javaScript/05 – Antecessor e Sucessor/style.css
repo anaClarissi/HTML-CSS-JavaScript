@@ -1,0 +1,54 @@
+body {
+    font: normal 20pt Arial;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+#numero {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+
+#calcular {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+
+}
+
+#calcular:hover {
+    background-color: white;
+    color: black;
+    width: 110px;
+    height: 45px;
+    font-size: 20px;
+}
+
+
+.antecessorSucessor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 50px;
+}
+
+.antecessor, .sucessor {
+    width: 200px;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid white;
+}

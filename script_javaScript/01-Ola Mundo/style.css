@@ -1,0 +1,15 @@
+body {
+    font: normal 20pt Arial;
+    text-align: center;
+    color: white;
+    background-color: black;
+
+}
+
+#botao {
+    width: 150px;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 18px;
+    border-radius: 10px;
+}

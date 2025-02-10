@@ -1,24 +1,34 @@
+const imagem = document.getElementById('imagem');
+const botoes = document.getElementById('botoes');
+let corIndex = 0;
+let intervaloID = null;
 
-
-function ligarVermelho() {
-    var imagem = document.querySelector('img')
-    imagem.setAttribute('src', 'imagens/vermelho.png')
+const semaforo = ( event ) => {
+    pararAutomatico();
+    ligar[event.target.id]();
 }
 
-function ligarAmarelo() {
-    var imagem = document.querySelector('img')
-    imagem.setAttribute('src', 'imagens/amarelo.png')
-
+const proximoIndex = () => {
+    corIndex = corIndex < 2 ? ++corIndex : 0;
+    
 }
 
-function ligarVerde() {
-    var imagem = document.querySelector('img')
-    imagem.setAttribute('src', 'imagens/verde.png')
+const mudarCor = () => {
+    const cores = ['vermelho', 'amarelo', 'verde']
+    const cor = cores[corIndex];
+    ligar[cor]();
+    proximoIndex();
 }
 
-function automatico() {
-   
+const pararAutomatico = () => {
+    clearInterval(intervaloID);
 }
 
-               
+const ligar = {
+    'vermelho': () => imagem.src = 'imagens/vermelho.png',
+    'amarelo': () => imagem.src = 'imagens/amarelo.png',
+    'verde': () => imagem.src = 'imagens/verde.png',
+    'automatico': () => intervaloID = setInterval(mudarCor, 1000)
+}
 
+botoes.addEventListener('click', semaforo);

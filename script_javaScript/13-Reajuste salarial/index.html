@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reajuste Salarial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Reajuste Salarial</h1>
+    <section>
+        <div class="dados">
+            <p>Salário do Funcionário: R$  <input type="number" name="salario" id="salario" required></p>
+            <input type="button" value="Reajuste" id="reajuste" onclick="reajustar()">
+        </div>
+        <div class="resultado">
+            <div id="resultado1">
+                <p>Salário Sem Aumento</p><br>
+                <p id="salarioSemAumento"></p>
+            </div>
+            <div id="resultado2">
+                <p>Salário Com Aumento</p><br>
+                <p id="salarioComAumento"></p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #161540;
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+section {
+    background-color: #403BBF;
+    box-sizing: border-box;
+    margin: auto;
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 2px solid #17171dce;
+}
+
+.resultado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    
+}
+
+#temperatura {
+    background-color: #262473;
+    border: none;
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    color: white;
+    font-size: large;
+}
+
+#converter {
+    background-color: #F25C05;
+    margin: 10px;
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: large;
+}
+
